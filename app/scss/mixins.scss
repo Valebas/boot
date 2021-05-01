@@ -21,37 +21,6 @@
   @return $result;
 }
 
-@mixin container() {
-  margin: 0 auto;
-  @media ($media-mob-xs) {
-    width: width($mob-xs, $content-mob-xs);
-  }
-  @media ($media-mob-s) {
-    width: width($mob-s, $content-mob-s);
-  }
-  @media ($media-mob-m) {
-    width: width($mob-m, $content-mob-m);
-  }
-  @media ($media-mob-landscape) {
-    width: width($mob-landscape, $content-mob-landscape);
-  }
-  @media ($media-tablet-sm) {
-    width: width($tablet-sm, $content-tablet-sm);
-  }
-  @media ($media-tablet-md) {
-    width: width($tablet-md, $content-tablet-md);
-  }
-  @media ($media-laptop-lg) {
-    width: width($laptop-lg, $content-laptop-lg);
-  }
-  @media ($media-desktop-xl) {
-    width: width($desktop-xl, $content-desktop-xl);
-  }
-  @media ($media-tv-xxl) {
-    width: width($tv-xxl, $content-tv-xxl);
-  }
-}
-
 // По сокращению "in" позволяет использовать конкретный медиа запрос без необходимости разворачивать все
 // По сокращению "inc" развернет все медиа запросы
 
