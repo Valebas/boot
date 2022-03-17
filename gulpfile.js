@@ -8,7 +8,6 @@ const gulp = require('gulp');
 const imagemin = import('gulp-imagemin');
 const jpg = require('imagemin-jpeg-recompress');
 const minify = require('gulp-csso');
-const mqpacker = require('css-mqpacker');
 const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const png = require ('imagemin-pngquant');
@@ -55,10 +54,7 @@ function css() {
   .pipe(postcss([
     autoprefixer({ overrideBrowserslist: [
       'last 2 versions'
-    ], grid: true }),
-    mqpacker({
-      sort: true
-    })
+    ], grid: true })
   ]))
   .pipe(gulp.dest('app/css'))
   .pipe(minify())
